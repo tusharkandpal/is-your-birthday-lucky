@@ -4,7 +4,7 @@ const checkBtn = document.querySelector("#check-btn");
 const output = document.querySelector("#output");
 
 function checkIfBirthdayLucky(sum, luckyNumberValue) {
-  if (sum && luckyNumberValue) {
+  if (sum && luckyNumberValue && luckyNumberValue >=0) {
     if (sum % luckyNumberValue === 0)
       output.innerText = "Yaay! your birthday is lucky 🥳";
     else output.innerText = "Nope, just you are 😉";
